@@ -35,6 +35,9 @@ const loadData = async () => {
     console.log(nextFetch);
     if (nextFetch === null) {
       return await getData(API);
+    } else if (nextFetch === '') {
+      alert('Ya no hay más personajes :c');
+      intersectionObserver.unobserve($observe);
     } else {
       return await getData(nextFetch);
     }
