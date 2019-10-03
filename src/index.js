@@ -1,3 +1,8 @@
+/**
+ * Al recargar la página se elimina el local storage y se muestran por defecto los primeros
+ * 20 personajes.
+ */
+window.onload = localStorage.clear();
 const $app = document.getElementById('app');
 const $observe = document.getElementById('observe');
 const API = 'https://rickandmortyapi.com/api/character/';
